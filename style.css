@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'Roboto'; 
+	src: url(fonts/Roboto-Regular.ttf); 
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', monospace;
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+}
+.col{
+  flex: 1;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.col h2{
+  padding: .5rem 1rem;
+  border-radius: .6rem;
+  transition: background .25s;
+  cursor: pointer;
+}
+.col h2:hover{
+  background: rgba(0,0,0,.1);
+}
+.col button{
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: .6rem;
+  transition: background .25s;
+  outline: none;
+}
+.col button:hover{
+  background: rgba(0,0,0,.1);
+}
+.inst{
+  position: absolute;
+  top: 1rem;
+  font-size: .8rem;
+  padding: .4rem 1.2rem;
+  background: rgba(0,0,0,.2);
+  border-radius: .4rem;
+  color: #2c3e50;
+  left: calc(100% / 2 - 86px);
+}
+.wrapper{
+  transition: all .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.6);
+}
+.notice-text{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20%;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFF;
+}
